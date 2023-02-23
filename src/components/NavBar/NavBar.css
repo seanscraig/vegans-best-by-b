@@ -7,9 +7,18 @@
   background-color: green;
 }
 
-.links {
+.nav-bar ul {
+  list-style-type: none;
   display: flex;
   gap: 20px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+}
+
+.nav-bar .active {
+  color: red;
 }
 
 

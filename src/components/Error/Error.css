@@ -1,0 +1,6 @@
+.error-container {
+  /* flex: "1 0 auto"; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}

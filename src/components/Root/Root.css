@@ -1,5 +1,6 @@
-.App {
+.app {
   /* text-align: center; */
+  /* flex: "1 0 auto"; */
   height: 100vh;
   display: flex;
   flex-direction: column;

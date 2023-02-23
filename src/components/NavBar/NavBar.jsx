@@ -1,17 +1,26 @@
+import { NavLink } from "react-router-dom";
 import "./NavBar.css";
 
 const navItems = [
   {
-    id: 1,
+    id: 0,
     text: "About Us",
+    path: "about",
   },
-  { 
+  {
+    id: 1,
+    text: "Products",
+    path: "products",
+  },
+  {
     id: 2,
-    text: "Products" 
+    text: "Shop",
+    path: "shop",
   },
-  { 
+  {
     id: 3,
-    text: "Contact" 
+    text: "Contact",
+    path: "contact",
   },
 ];
 
@@ -19,13 +28,22 @@ const NavBar = () => {
   return (
     <nav className="nav-bar">
       <div className="logo-container">
-        <h3>Vegans Best By B</h3>
+        <NavLink to="/" end>
+          <span className="logo">Vegans Best By B</span>
+        </NavLink>
       </div>
-      <div className="links">
+      <ul>
         {navItems.map((item) => (
-          <h3 key={item.id}>{item.text}</h3>
+          <li key={item.id}>
+            <NavLink
+              to={item.path}
+              className={({ isActive }) => (isActive ? "active" : undefined)}
+            >
+              {item.text}
+            </NavLink>
+          </li>
         ))}
-      </div>
+      </ul>
     </nav>
   );
 };
