@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/vegans-best-by-b/static/css/main.3f1a9fd8.css",
+    "main.js": "/vegans-best-by-b/static/js/main.518f59c3.js",
+    "static/media/homeBackground.jpg": "/vegans-best-by-b/static/media/homeBackground.1a39408b439d0d5543eb.jpg",
+    "index.html": "/vegans-best-by-b/index.html",
+    "main.3f1a9fd8.css.map": "/vegans-best-by-b/static/css/main.3f1a9fd8.css.map",
+    "main.518f59c3.js.map": "/vegans-best-by-b/static/js/main.518f59c3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f1a9fd8.css",
+    "static/js/main.518f59c3.js"
+  ]
+}
