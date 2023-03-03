@@ -1,9 +1,9 @@
 import "./Home.css";
-import backgroundImage from "../../assets/homeBackground.jpg";
+import backgroundImage1 from "../../assets/DragonFruitSmoothieBowl.jpg";
 
 const containerStyle = {
   flex: "1 0 auto",
-  backgroundImage: `url(${backgroundImage})`,
+  backgroundImage: `url(${backgroundImage1})`,
   backgroundPosition: "center center",
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",

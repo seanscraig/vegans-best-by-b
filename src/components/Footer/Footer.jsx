@@ -3,10 +3,10 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div className="footer">
-      <h1>Socials</h1>
-      <p>
+      <h3>Socials</h3>
+      <span>
         Designed and Developed by <a href="http://seancraig.me">Sean Craig</a>
-      </p>
+      </span>
     </div>
   );
 };
