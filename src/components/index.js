@@ -1,9 +1,0 @@
-export { default as About } from "./About";
-export { default as Root } from "./Root";
-export { default as Contact } from "./Contact";
-export { default as Error } from "./Error";
-export { default as Footer } from "./Footer";
-export { default as Home } from "./Home";
-export { default as NavBar } from "./NavBar";
-export { default as Products } from "./Products";
-export { default as Shop } from "./Shop";
