@@ -1,0 +1,22 @@
+.product-header{
+  text-align: center;
+}
+
+.product-container-items {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 1em 2em;
+  gap: 0.5em;
+}
+
+.product-container-items-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 45%;
+  text-align: center;
+}
+
+.product-container-items-card img {
+  max-width: 100%;
+}
