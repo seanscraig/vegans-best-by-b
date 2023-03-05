@@ -72,7 +72,7 @@ const NavBar = () => {
         </div>
         <div className="hamburger-menu-button">
           <button onClick={() => setNavMenuOpen((prev) => !prev)}>
-            {navMenuOpen ? "close" : "open"}
+            {navMenuOpen ? "-" : "+"}
           </button>
         </div>
       </div>

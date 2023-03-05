@@ -1,5 +1,10 @@
+:root {
+  --champagne: #FFE8C9;
+}
+
 .app {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: var(--champagne);
 }
