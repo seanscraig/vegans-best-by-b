@@ -31,7 +31,7 @@
 }
 
 .nav-bar .logo {
-  color: black;
+  color: var(--green);
 }
 
 .nav-links.show-links {
@@ -77,6 +77,16 @@
   color: #000000;
   display: block;
   transition: 0.3s;
+}
+
+.hamburger-menu-button button {
+  border: none;
+  color: var(--gold);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 52px;
+  background-color: inherit;
 }
 
 .close-btn {
