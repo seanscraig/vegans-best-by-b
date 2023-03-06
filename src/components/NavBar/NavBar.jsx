@@ -1,41 +1,16 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
+import Button from "../Reusable/Button";
+import { navItems } from "../../utils/navItems";
+// import { MenuIcon } from "../Reusable/Icon/Icon";
+import menuIcon from "../../assets/icons/menu.svg";
 
-const navItems = [
-  {
-    id: 0,
-    text: "Home",
-    path: "/",
-  },
-  {
-    id: 1,
-    text: "About Us",
-    path: "about",
-  },
-  {
-    id: 2,
-    text: "Products",
-    path: "products",
-  },
-  {
-    id: 3,
-    text: "Shop",
-    path: "shop",
-  },
-  {
-    id: 4,
-    text: "Contact",
-    path: "contact",
-  },
-];
-
-const NavBar = () => {
+const NavBar = function () {
   const [navMenuOpen, setNavMenuOpen] = useState(false);
 
   const handleButtonClick = () => {
-    setNavMenuOpen(!navMenuOpen);
-
+    setNavMenuOpen((prev) => !prev);
   };
 
   const navMenu = (
@@ -56,12 +31,12 @@ const NavBar = () => {
   return (
     <nav className="nav-bar">
       <div id="myNav" className={`overlay${navMenuOpen ? " show-links" : ""}`}>
-        <button
-          className="close-btn"
-          onClick={() => setNavMenuOpen((prev) => !prev)}
-        >
-          x
-        </button>
+        <Button
+          type="button"
+          styleClass="close-btn"
+          onClick={handleButtonClick}
+          value="x"
+        />
         <ul className="overlay-content">{navMenu}</ul>
       </div>
       <div className="nav-logo-and-button">
@@ -70,11 +45,26 @@ const NavBar = () => {
             <h1 className="logo">Vegans Best By B</h1>
           </NavLink>
         </div>
-        <div className="hamburger-menu-button">
-          <button onClick={() => setNavMenuOpen((prev) => !prev)}>
-            {navMenuOpen ? "-" : "+"}
-          </button>
-        </div>
+        <Button
+          type="button"
+          styleClass="menu-btn"
+          onClick={handleButtonClick}
+          value={navMenuOpen ? "-" : "+"}
+        />
+        {/* <button onClick={handleButtonClick} className="menu-btn">
+          <svg
+            width="20"
+            height="20"
+            style={{
+              fill: "rgb(0,0,255)",
+              strokeWidth: "3",
+              stroke: "rgb(0,0,0)",
+            }}
+          >
+            <rect width="20" height="5" />
+            <rect width="20" height="5" />
+          </svg>
+        </button> */}
       </div>
       {/* <ul className={`nav-links${navMenuOpen ? " show-links" : ""}`}>
         {navMenu}
