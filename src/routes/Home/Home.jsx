@@ -1,5 +1,5 @@
 import "./Home.css";
-import backgroundImage1 from "../../assets/DragonFruitSmoothieBowl.jpg";
+import backgroundImage1 from "../../assets/images/home/DragonFruitSmoothieBowl.jpg";
 
 const containerStyle = {
   flex: "1 0 auto",
