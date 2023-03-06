@@ -1,9 +1,13 @@
 :root {
   --champagne: #FFE8C9;
+  --brown: #4A1E00;
+  --green: #2C6E49;
+  --gold: #D99A32;
 }
 
 html, body {
   background-color: var(--champagne);
+  color: var(--brown);
   position: absolute;
   width: 100%;
   height: 100%;
