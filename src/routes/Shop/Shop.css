@@ -4,9 +4,11 @@
   align-items: center;
   margin: 1em 2em;
   text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
-.container a {
+.shop-container a {
   text-decoration: none;
   color: inherit;
 }
