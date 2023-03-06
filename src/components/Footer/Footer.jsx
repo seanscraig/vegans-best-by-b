@@ -1,6 +1,6 @@
 import "./Footer.css";
 
-const Footer = () => {
+const Footer = function () {
   return (
     <div className="footer">
       <span>Socials</span>
