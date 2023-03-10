@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import "./NavBar.css";
-import Button from "../Reusable/Button";
+import { IconContext } from "react-icons";
+import { HiMenu, HiX } from "react-icons/hi";
 import { navItems } from "../../utils/navItems";
-// import { MenuIcon } from "../Reusable/Icon/Icon";
-import menuIcon from "../../assets/icons/menu.svg";
+import "./NavBar.css";
 
 const NavBar = function () {
   const [navMenuOpen, setNavMenuOpen] = useState(false);
@@ -31,12 +30,11 @@ const NavBar = function () {
   return (
     <nav className="nav-bar">
       <div id="myNav" className={`overlay${navMenuOpen ? " show-links" : ""}`}>
-        <Button
-          type="button"
-          styleClass="close-btn"
-          onClick={handleButtonClick}
-          value="x"
-        />
+      <IconContext.Provider value={{ size: "3em"}}>
+          <button onClick={handleButtonClick} className="close-btn">
+            <HiX />
+          </button>
+        </IconContext.Provider>
         <ul className="overlay-content">{navMenu}</ul>
       </div>
       <div className="nav-logo-and-button">
@@ -45,26 +43,11 @@ const NavBar = function () {
             <h1 className="logo">Vegans Best By B</h1>
           </NavLink>
         </div>
-        <Button
-          type="button"
-          styleClass="menu-btn"
-          onClick={handleButtonClick}
-          value={navMenuOpen ? "-" : "+"}
-        />
-        {/* <button onClick={handleButtonClick} className="menu-btn">
-          <svg
-            width="20"
-            height="20"
-            style={{
-              fill: "rgb(0,0,255)",
-              strokeWidth: "3",
-              stroke: "rgb(0,0,0)",
-            }}
-          >
-            <rect width="20" height="5" />
-            <rect width="20" height="5" />
-          </svg>
-        </button> */}
+        <IconContext.Provider value={{ size: "3em"}}>
+          <button onClick={handleButtonClick} className="menu-btn">
+            <HiMenu />
+          </button>
+        </IconContext.Provider>
       </div>
       {/* <ul className={`nav-links${navMenuOpen ? " show-links" : ""}`}>
         {navMenu}
