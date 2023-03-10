@@ -88,6 +88,7 @@
   right: 35px;
   background-color: transparent;
   border: none;
+  color: var(--brown);
 }
 
 @media screen and (min-width: 600px) {
