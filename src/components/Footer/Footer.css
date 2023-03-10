@@ -1,7 +1,8 @@
 .footer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 0.5em;
+  padding-bottom: 1em;
   align-items: center;
   background-color: inherit;
   color: var(--green);
