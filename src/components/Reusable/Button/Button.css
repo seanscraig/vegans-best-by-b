@@ -1,11 +1,7 @@
-.menu-btn{
+.menu-btn {
   border: none;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
   background-color: inherit;
   color: var(--gold);
-  font-size: 52px;
 }
 
 .close-btn {
@@ -15,4 +11,10 @@
   right: 35px;
   background-color: transparent;
   border: none;
+}
+
+@media screen and (min-width: 600px) {
+  .menu-btn {
+    display: none;
+  }
 }
