@@ -1,4 +1,8 @@
-.product-header{
+.product-container {
+  margin-top: 3em;
+}
+
+.product-header {
   text-align: center;
 }
 
