@@ -6,8 +6,8 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: 1em 2em;
-  gap: 0.5em;
+  margin: 0.5em;
+  gap: 1em;
 }
 
 .product-container-items-card {
