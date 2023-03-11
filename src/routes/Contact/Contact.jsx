@@ -90,7 +90,7 @@ const Contact = () => {
             placeholder="Message"
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
-          <input type="submit" value="Send Message" />
+          <button type="submit">Send Message</button>
         </form>
       </div>
     </>
