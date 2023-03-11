@@ -8,7 +8,7 @@ const Footer = function () {
       <a href="http://www.google.com">
         Follow us on <FiInstagram />
       </a>
-      <span>
+      <span id="my-website-link">
         Designed and Developed by <a href="http://seancraig.me">Sean Craig</a>
       </span>
     </div>
